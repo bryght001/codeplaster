@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"main.css"}
+{"version":3,"sourceRoot":"","sources":["_resetsAndVariables.scss","main.scss"],"names":[],"mappings":"AAAQ;AAER;EACE;EACA;EACA;;;ACHF;EACC;;;AAID;EACC;EACA;EACA;EACA;EACA;EACA;EACA;;AAEC;EACA;EACA;EACA;EACA;;AAGF;EACC;EACA;EACA;EACA;EACA;EACA;EACA;;AAGA;EACA;EACA;EACA;;AAGA;EACA;EACA;EACA;;AAGA;EACC","file":"main.css"}

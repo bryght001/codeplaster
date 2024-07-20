@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+//variables this is sass maps
+$color: (
+    "primary": #130f40,
+    "secondary": #30336b,
+    "textA": #ffffff,
+    "textB": #000000,
+    "bgcolor": #fefefe,
+);
+
+$font-weight :(
+    "regular": 400,
+    "medium": 500,
+    "bold": 700,
+);
+
+$font-family :(
+   "fontFamilyA": "Oswald",
+   "fontFamilyB": Poppins,
+);
+
+$font-size: (
+"logo": 3.5vw,
+ "hero": 10vw,
+ "body": 2.35vw,
+);
+
+  
+
