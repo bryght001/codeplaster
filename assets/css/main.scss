@@ -1,4 +1,4 @@
-@import "./resetsAndVariables";// partials
+@import "./resets";// partials
 
 body{
  background-color: map-get($color, "bgcolor");
@@ -12,13 +12,19 @@ body{
  display: flex;
  align-items: center;
  justify-content: space-between;
- padding: 0 30px;
+ padding: 25px 30px;
+ position: relative;
 
   #brandName{
   color: map-get($color, "primary");
   font-family: map-get($font-family, "fontFamilyA");
   font-weight: map-get($font-weight, "bold");
   font-size: map-get($font-size, "logo");
+ }
+
+
+.menuList{
+  width: 100%;
  }
 
 .menuList a{
@@ -28,7 +34,7 @@ body{
  font-size: map-get($font-size, "body");
  color: map-get($color, "primary");
  border-radius: 10px;
- padding: 1.4vw;
+ padding: 1.6vw;
  }
 
  .menuList a:hover{
@@ -42,8 +48,5 @@ body{
  color: map-get($color, "textA");
  padding: 1vw;
  }
- 
- .menuBotton{
-  display: none;
- }
+
 }
