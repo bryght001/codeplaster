@@ -34,11 +34,11 @@
     right: 0;
     height: 0;
     width: 100%;
-    transiton: 0.2s;
+    transition: 0.2s;
     overflow: hidden;
   }
   .menuList.active {
-    height: 6vh;
+    height: 25vh;
   }
   .menuList a {
     display: block;
