@@ -9,10 +9,10 @@
 //variables this is sass maps
 $color: (
   "primary": #130f40,
-  "secondary": #30336b,
+  "secondary": #BF8F00,
   "textA": #ffffff,
   "textB": #000000,
-  "bgcolor": #fefefe,
+  "bgcolor": #faf5ef,
 );
 
 $font-weight :("regular": 400,
@@ -25,14 +25,15 @@ $font-family :("fontFamilyA": "Oswald",
 );
 
 $font-size: (
-  "logo": 3.5vw,
-  "hero": 10vw,
-  "body": 2.35vw,
+  "logo": 4.4svw,
+  "hero": 11svw,
+  "body": 3.5svw,
+  "menuBody": 2.0svw,
 );
 
 
 /* === media queries. This website is mobile first responsive.====*/
-/* For desktop: */
+/* For mobbile: */
 
 @media only screen and (max-width: 767px) {
 
@@ -41,39 +42,58 @@ $font-size: (
     width: 100%;
   }
 
-  .menuButton {
-    display: block;
-    cursor: pointer;
-    width: 25px;
-    height: 25px;
-    border: 2px solid map-get($color, "secondary");
-    border-radius: 5px;
-    padding: 4px;
+
+  #menuNavbar {
+    background-color: map-get($color, "bgcolor");
+    width: 100%;
+    height: 7svh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    object-fit: cover;
+    padding: 10px 30px;
+    position: relative;
+    z-index: 3;
   }
 
-  .menuButton .line {
-    width: 100%;
-    height: 2px;
-    margin: 2px 0;
+
+  #menuButton {
+    display: block;
+    cursor: pointer;
+    justify-content: space-around;
+    width: fit-content;
+    height: fit-content;
+    border: 3px solid map-get($color, "secondary");
+    border-radius: 5px;
+    padding: 4px;
+    margin: 2px;
+  }
+
+  #menuButton .line {
+    width: 2.5svh;
+    height: 0.43svh;
+    margin: 2.5px 0;
     background-color: map-get($color, "secondary");
   }
 
-  .menuList {
+  #menuList {
     position: absolute;
-    top: 5vh;
+    top: 7.1svh;
+    background-color: map-get($color, "bgcolor");
     left: 0;
     right: 0;
     height: 0;
     width: 100%;
-    transition: 0.2s;
-    overflow: hidden;
+    margin-left: 0;
   }
 
-  .menuList.active {
-    height: 25vh;
+  #menuList.active {
+    height: fit-content;
+
   }
 
-  .menuList a {
+
+  #menuList a {
     display: block;
     width: fit-content;
     margin: 5px auto 0 auto;
@@ -86,13 +106,26 @@ $font-size: (
     border-radius: 10px;
     padding: 1.6vw;
     opacity: 0;
-    transition: 0.2s;
   }
 
-  .menuList.active a {
+  #menuList a.active {
+    background-color: map-get($color, "secondary");
+    color: map-get($color, "textA");
+    padding: 1svw;
+  }
+
+  #menuList.active a {
     opacity: 1;
-
+    cursor: pointer;
   }
+
+  #menuList.active a:hover {
+    background-color: map-get($color, "secondary");
+    color: map-get($color, "textA");
+    padding: 1svw;
+  }
+
+
 }
 
 
@@ -146,6 +179,10 @@ $font-size: (
 
   .col-12 {
     width: 100%;
+  }
+
+  #menuList {
+    margin-left: 8svh;
   }
 
 }
