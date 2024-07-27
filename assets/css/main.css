@@ -82,6 +82,12 @@
     color: #ffffff;
     padding: 1svw;
   }
+  #heroButtons {
+    position: absolute;
+    top: 90svh;
+    right: 0;
+    left: 30%;
+  }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -295,6 +301,9 @@ body {
   font-family: Poppins;
   color: #ffffff;
   text-align: center;
+}
+.heroSection .material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
 
 /*# sourceMappingURL=main.css.map */
